@@ -1,23 +1,31 @@
-#this is a program asking the user about  hours and rate per hour 
-#. Pay the hourly rate for the hours up to
-# 40 and 1.5 times the hourly rate for all hours worked above 40 hours
-h=input("Enter your hours:")
-r=input("Enter your rate:")
-try: 
-    h=float(h)
-    r=float(r)
+#Write a program to prompt for a score between 0.0 and 1.0.
+#  If the score is out of range, print an error. 
+# If the score is between 0.0 and 1.0, 
+# print a grade using the following table:
+#Score Grade
+#>= 0.9 A
+#>= 0.8 B
+#>= 0.7 C
+#>= 0.6 D
+#< 0.6 F
+score = input("Enter Score: ")
+try:
+    score=float(score)
 except:
-    print('Enter a numbers not a letters')
+    print("enter a number")
     quit()
-if h <=40 :
-    pay= h*r
-    print(pay)
-else:
-    pay=(40*r)+((h-40)*(r*1.5))
-print(pay)
-    
-    
-
-
-
-
+if score > 1.0 or score < 0.0:
+    print("Error: Score is out of range")
+    quit()
+if score>=0.9:
+    print('A')
+elif score>=0.8:
+    print('B')
+elif score >=0.7:
+   print('C')
+elif score>=0.6:
+    print('D')
+elif score<0.6:
+    print('F')
+else: 
+        print("error")
