@@ -1,8 +1,5 @@
-fruit='banana'
-index=0
-while index < len(fruit):
-       letter = fruit[index]
-       print(index, letter)
-       index=index+1
-for letter2 in fruit:
-       print(letter2)
+text = "X-DSPAM-Confidence:    0.8475"
+mes=text.find(':')
+ato=text[mes+1:]
+ato=float(ato)
+print(ato)
