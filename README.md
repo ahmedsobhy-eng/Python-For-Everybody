@@ -1,2 +1,1 @@
-# Python-For-Everybody
-learn programming from Dr. Chuck's course
+This repository has been migrated to The-AI-Mastery-Path for better organization
